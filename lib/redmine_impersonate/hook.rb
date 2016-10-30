@@ -38,6 +38,10 @@ module RedmineImpersonate
         link + script.html_safe
       end
 
+      def view_people_show_details_bottom(context = {})
+        impersonation_html(context.merge(user: context[:person]))
+      end
+
       # Hook user profile and edit pages
       alias_method :view_account_left_bottom, :impersonation_html
       alias_method :view_users_form, :impersonation_html
