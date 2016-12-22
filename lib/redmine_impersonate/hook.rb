@@ -4,6 +4,18 @@ module RedmineImpersonate
       # necessary for using content_tag in Listener
       attr_accessor :output_buffer
 
+      # For some versions (redmine.org#19024) don't prepend directory root to
+      # `link_to` inside hook. Backport it.
+      def self.default_url_options
+        defaults = super
+
+        unless Redmine::Utils.relative_url_root.blank?
+          defaults[:script_name] ||= Redmine::Utils.relative_url_root
+        end
+
+        defaults
+      end
+
       # If user is impersonating, show message on the top
       def view_layouts_base_html_head(context = {})
         session = context[:controller].session
