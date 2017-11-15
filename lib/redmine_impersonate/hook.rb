@@ -39,6 +39,7 @@ module RedmineImpersonate
         session = context[:controller].session
 
         return if !User.current.admin? || user == User.current || !user.active? || session[:true_user_id]
+        return if context[:controller].action_name == 'new'
 
         link = link_to l(:button_impersonate),
                        { controller: 'impersonation', action: 'create', user_id: user.id },
