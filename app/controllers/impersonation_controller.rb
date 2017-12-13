@@ -5,7 +5,7 @@ class ImpersonationController < ApplicationController
   def create
     if !session[:true_user_id]
       session[:true_user_id] = User.current.id
-      impersonated_user = User.find(params[:user_id])
+      impersonated_user = User.active.logged.find(params[:user_id])
       User.current = impersonated_user
       session[:user_id] = impersonated_user.id
 
