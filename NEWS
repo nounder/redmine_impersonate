@@ -1,3 +1,16 @@
+1.0.0 (2016-12-22)
+
+ - Dropped support for Redmine 2.x.
+ - Only impersonate active users.
+ - Use sudo mode if available.
+ - Hide impersonation link in edit form.
+ - Fix impersonation link when Redmine root is in subdirectory.
+ - Support redmine_people plugin.
+
+Most work since last release was done by github.com/thegcat.
+Claps for him and plan.io team!
+
+
 0.9.0 (2015-11-04)
 
 Initial public release.
