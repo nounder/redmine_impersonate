@@ -1,0 +1,3 @@
+ru:
+  notice_impersonating_user: "Представляемся как %{user}"
+  button_impersonate: "Представиться"
