@@ -1,3 +1,10 @@
+2.0.0 (2018-04-19)
+
+ - Support Redmine 4.x.
+ - Dropped support for Redmine 3.x.
+
+Claps for github.com/antitoine
+
 1.0.0 (2016-12-22)
 
  - Dropped support for Redmine 2.x.
