@@ -1,0 +1,3 @@
+fr:
+  notice_impersonating_user: Connecté en tant que %{user}
+  button_impersonate: Imiter

@@ -1,6 +1,6 @@
 class ImpersonationController < ApplicationController
-  before_filter :require_login
-  before_filter :require_admin, only: [:create]
+  before_action :require_login
+  before_action :require_admin, only: [:create]
 
   require_sudo_mode :create if Redmine::VERSION::STRING >= '3.1'
 
