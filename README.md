@@ -28,5 +28,6 @@ Requirements
 Since this program depend on another software, it was written with compatibility
 in mind to keep it functional across many version of software it uses.
 
-  * Redmine (`>= 3.0`)
+  * Redmine (`>= 4.0`)
+  * Redmine (`>= 3.0`, use [redmine-3.x branch](https://github.com/rgtk/redmine_impersonate/tree/redmine-3.x))
   * Redmine (`2.0+`, use [redmine-2.x branch](https://github.com/rgtk/redmine_impersonate/tree/redmine-2.x))
