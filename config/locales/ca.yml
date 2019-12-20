@@ -1,0 +1,3 @@
+ca:
+  notice_impersonating_user: Personificar %{user}
+  button_impersonate: Personificar
