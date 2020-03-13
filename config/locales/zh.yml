@@ -1,0 +1,3 @@
+zh:
+  notice_impersonating_user: 正在模拟 %{user}
+  button_impersonate: 模拟该用户
