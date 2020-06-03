@@ -32,7 +32,7 @@ class ImpersonationController < ApplicationController
 
     if true_user && true_user.active?
       self.logged_user = true_user
-      session.delete(:real_user_id)
+      session.delete(:true_user_id)
     end
 
     redirect_to :back
