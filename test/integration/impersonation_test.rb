@@ -55,7 +55,7 @@ class ImpersonationTest < ActionDispatch::IntegrationTest
 
     post '/admin/impersonation', params: {user_id: user.id}
     follow_redirect!
-    assert_equal User.current, user
+    assert_equal user, User.find(session[:user_id])
     assert_select '#impersonation-bar'
   end
 
@@ -66,7 +66,7 @@ class ImpersonationTest < ActionDispatch::IntegrationTest
 
     post '/admin/impersonation', params: {user_id: user.id}
     assert_response 403
-    assert_equal User.current.login, 'jsmith'
+    assert_equal 'jsmith', User.find(session[:user_id]).login
   end
 
   test "impersonating user as anonymous" do
