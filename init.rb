@@ -1,4 +1,3 @@
-require 'redmine_impersonate'
 
 Redmine::Plugin.register :redmine_impersonate do
   name "Redmine Impersonate"
