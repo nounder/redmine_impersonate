@@ -21,6 +21,12 @@ temporarily login as other user by clicking "Impersonate" button in his
 profile and edit page. To stop impersonating, click "Cancel" next to
 impersonating message at the top.
 
+Usage
+-----
+
+1. Go to profile of a user you want to impersonate.
+2. Click "Impersonate" in action menu. ([see screenshot](https://github.com/nounderline/redmine_impersonate/issues/23))
+
 
 Requirements
 ------------
